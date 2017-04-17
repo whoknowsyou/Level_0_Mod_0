@@ -1,0 +1,18 @@
+* Make a window appear to show your morning routine.
+  first: make one event appear in its own window
+  second: make only one window show all the events
+
+* Make a program that tells a knock-knock joke it the proper order.
+  modify it so it receives the responses from the user.
+
+* Make a program that asks the user to enter something they like. Then tell them 
+  that this is awesome. 
+  Sample Output: 
+  What do you like?
+  tacos
+  tacos are AWESOME!
+  
+  * Make a mad-libs story
+  
+  * Make a quiz game.
+    Tell the user how many they got correct.
