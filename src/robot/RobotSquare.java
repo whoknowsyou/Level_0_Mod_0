@@ -7,7 +7,6 @@ public class RobotSquare {
     public static void main(String[] args) throws Exception {
         // 1. Make a new Robot
 
-fgart
         // 3. Put the robot's pen down
 
 
