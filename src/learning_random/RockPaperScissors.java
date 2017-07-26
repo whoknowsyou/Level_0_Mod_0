@@ -4,6 +4,7 @@ import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
+import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -34,12 +35,10 @@ public class RockPaperScissors extends JPanel implements ActionListener{
     Dimension buttonDim = new Dimension(300, 200);
     
     public void run(){
-        URL url;
         try {
-            //1. Find a picture of a rock, paper, and scissors on the internet. Replace the URL's below with your images
-            rockImage = ImageIO.read(new URL("https://image.freepik.com/free-icon/letter-x_318-26692.jpg"));  
-            paperImage = ImageIO.read(new URL("https://image.freepik.com/free-icon/letter-x_318-26692.jpg")); 
-            scissorsImage = ImageIO.read(new URL("https://image.freepik.com/free-icon/letter-x_318-26692.jpg")); 
+            rockImage = ImageIO.read(new File("rock.jpeg"));  
+            paperImage = ImageIO.read(new File("paper.jpg")); 
+            scissorsImage = ImageIO.read(new File("scissors.jpeg")); 
         } catch (MalformedURLException ex) {
             Logger.getLogger(RockPaperScissors.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IOException ex) {
@@ -78,11 +77,11 @@ public class RockPaperScissors extends JPanel implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent e) {
         int selection = 0;
-        //2. Run the program multiple times. Does the computer always choose the same thing?
-        //3. Make oppenentSelection a random number between 0 and 2;
+        //1. Run the program multiple times. Does the computer always choose the same thing?
+        //2. Make oppenentSelection a random number between 0 and 2;
         int opponentSelection = 0;
         
-        //4. Run the program again. Is the result better?
+        //3. Run the program again. Is the result better?
         
         if(e.getSource() == paperButton){
             selection = 1;

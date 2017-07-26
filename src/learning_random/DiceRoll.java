@@ -2,6 +2,7 @@ package learning_random;
 
 import java.awt.Dimension;
 import java.awt.image.BufferedImage;
+import java.io.File;
 import java.io.IOException;
 import java.util.Random;
 
@@ -27,12 +28,12 @@ public class DiceRoll{
 	
 	public void run(){
 		try {
-			oneImg = ImageIO.read(this.getClass().getResourceAsStream("one_dice.jpeg"));
-			twoImg = ImageIO.read(this.getClass().getResourceAsStream("two_dice.jpeg"));
-			threeImg = ImageIO.read(this.getClass().getResourceAsStream("three_dice.jpeg"));
-			fourImg = ImageIO.read(this.getClass().getResourceAsStream("four_dice.jpeg"));
-			fiveImg = ImageIO.read(this.getClass().getResourceAsStream("five_dice.jpeg"));
-			sixImg = ImageIO.read(this.getClass().getResourceAsStream("six_dice.jpeg"));
+			oneImg = ImageIO.read(new File("dice1.jpeg"));
+			twoImg = ImageIO.read(new File("dice2.jpeg"));
+			threeImg = ImageIO.read(new File("dice3.jpeg"));
+			fourImg = ImageIO.read(new File("dice4.jpeg"));
+			fiveImg = ImageIO.read(new File("dice5.jpeg"));
+			sixImg = ImageIO.read(new File("dice6.jpeg"));
 		} catch (IOException e1) {
 			e1.printStackTrace();
 		}
