@@ -15,9 +15,11 @@ import java.util.Random;
 public class IntroToRandom {
 	public static void main(String[] args) {
 		//Create an object of the Random class here
+Random random = new Random();
+		int randInt = random.nextInt(89+223)-223;
 
 		int r = 0;
 		
-		System.out.println(r); 
+		System.out.println(randInt);
 	}
 }
